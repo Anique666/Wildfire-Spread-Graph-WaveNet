@@ -1,0 +1,11 @@
+argparse
+joblib
+json
+matplotlib
+numpy
+pandas
+scikit-learn
+seaborn
+geopandas
+shapely
+xgboost
