@@ -12,3 +12,6 @@ agg_output/
 __pycache__/
 tensors_test/
 tensors_full/
+adj_output/
+check_adj.py
+inspect_adj.py
