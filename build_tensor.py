@@ -50,11 +50,13 @@ def main(panel_parquet, static_parquet, grid_gpkg, out_dir,
     if time_min is None:
         epoch_min = int(panel["epoch_hr"].min())
     else:
-        epoch_min = int(pd.to_datetime(time_min).astype("int64") // 10**9 // 3600)
+        epoch_min = int(pd.to_datetime(time_min).value // 10**9 // 3600)
+
     if time_max is None:
         epoch_max = int(panel["epoch_hr"].max())
     else:
-        epoch_max = int(pd.to_datetime(time_max).astype("int64") // 10**9 // 3600)
+        epoch_max = int(pd.to_datetime(time_max).value // 10**9 // 3600)
+
 
     print(f"[info] epoch range hours: {epoch_min} -> {epoch_max} (inclusive)")
     # build uniform time index at given resolution
