@@ -1,0 +1,12 @@
+data/
+preproc_output/
+agg_output/
+*.csv
+*.parquet
+*.gpkg
+*.geojson
+*.shp
+*.dbf
+*.prj
+*.shx
+__pycache__/
