@@ -10,3 +10,5 @@ agg_output/
 *.prj
 *.shx
 __pycache__/
+tensors_test/
+tensors_full/
