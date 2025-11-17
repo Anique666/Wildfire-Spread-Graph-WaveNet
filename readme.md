@@ -52,7 +52,7 @@ If you want to train with focal loss instead of class-weighting, add `--use_foca
 Creates a side-by-side map: actual new burns in (t, t+24h] vs predicted per-cell spread probability (and arrows for high-prob edges).
 
 ```powershell
-python baseline_viz_spatial.py --grid ./preproc_output/grid.gpkg --panel ./agg_output/panel_cell_time.parquet --edge ./edge_spread_examples_full.parquet --model ./xgb_edge_baseline.joblib --time_epoch 438298 --horizon 24 --prob_thresh 0.4
+ python ./baseline/baseline_viz_spatial.py --grid ./preproc_output/grid.gpkg --panel ./agg_output/panel_cell_time.parquet --edge ./fa_and_ed/edge_spread_examples_full.parquet --model ./baseline/xgb_edge_baseline.joblib --time_epoch 438298 --horizon 24 --prob_thresh 0.4
 ```
 
 ---

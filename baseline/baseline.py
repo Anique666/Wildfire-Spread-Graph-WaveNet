@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-train_xgboost_baseline.py
+baseline.py
 
 Loads balanced edge dataset and feature list, trains XGBoost and saves both model and feature-list JSON.
 python baseline.py --edge_data ./edge_spread_examples.parquet --model_out ./xgb_edge_baseline.joblib
